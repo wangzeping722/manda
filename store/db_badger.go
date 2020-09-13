@@ -12,6 +12,7 @@ type BadgerDB struct {
 	db     *badger.DB
 	logger *log.Logger
 }
+
 type KVItem struct {
 	key   []byte
 	value []byte
