@@ -1,4 +1,4 @@
-package cmd
+package main
 
 import (
 	"flag"
@@ -34,6 +34,8 @@ func main() {
 	quitCh := make(chan os.Signal, 0)
 
 	signal.Notify(quitCh, os.Kill, os.Interrupt, syscall.SIGHUP, syscall.SIGINT, syscall.SIGTERM, syscall.SIGQUIT)
+
+	go app.Run()
 
 	<-quitCh
 }

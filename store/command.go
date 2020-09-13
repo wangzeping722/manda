@@ -19,7 +19,7 @@ func NewSetCommand(key, value string) *command {
 	}
 }
 
-func NewDeleteCommand(key, value string) *command {
+func NewDeleteCommand(key string) *command {
 	return &command{
 		Op:  Delete,
 		Key: key,
