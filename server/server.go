@@ -3,8 +3,8 @@ package server
 import (
 	"fmt"
 	"github.com/wangzeping722/manda/config"
+	"github.com/wangzeping722/manda/goredis"
 	"github.com/wangzeping722/manda/store"
-	"github.com/yongman/go/goredis"
 	"log"
 	"net"
 	"os"
